@@ -22,8 +22,7 @@ public class Base {
 
 	public WebDriver initializedriver() throws IOException {
 		pop = new Properties();
-		FileInputStream hh = new FileInputStream(
-				"C:\\Users\\Kashan\\eclipse-workspace1\\TeamSports\\src\\main\\java\\Resources\\Data-File");
+		FileInputStream hh = new FileInputStream(System.getProperty("user.dir")+"\\Data-File");
 		pop.load(hh);
 		String browserName = pop.getProperty("browser");
 		if (browserName.equals("chrome")) {
