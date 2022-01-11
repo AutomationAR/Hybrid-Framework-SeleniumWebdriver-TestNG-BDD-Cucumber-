@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>
+<listener class-name="E2EDaraz.Listenners">
+</listener>
+</listeners>
+  <test name="TestAC">
+    <classes>
+      <class name="E2EDaraz.TestAccessoriesCount"/>
+      </classes>
+  </test> <!-- Test -->
+       <test name="TestSL">
+    <classes>
+      <class name="E2EDaraz.TestTSlinks"/>
+      </classes>
+  </test> <!-- Test -->
+       <test name="TestSB">
+    <classes>
+      <class name="E2EDaraz.TestSialkotBrand"/>
+      </classes>
+  </test> <!-- Test -->
+       <test name="TestAS">
+    <classes>
+      <class name="E2EDaraz.TestASSportsBrand"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

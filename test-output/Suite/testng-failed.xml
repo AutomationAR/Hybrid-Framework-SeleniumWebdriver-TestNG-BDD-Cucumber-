@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="E2EDaraz.Listenners"/>
+  </listeners>
+  <test parallel="tests" name="TestAC(failed)">
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- TestAC(failed) -->
+</suite> <!-- Failed suite [Suite] -->
